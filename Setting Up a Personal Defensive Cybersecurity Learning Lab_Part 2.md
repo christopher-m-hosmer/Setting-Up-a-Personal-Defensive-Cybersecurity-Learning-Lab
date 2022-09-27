@@ -52,9 +52,9 @@ Original Created On: 24 Apr 2022
 
 Last Modified by:
  Christopher M. Hosmer [2xCH]
-Last Modified On: 21 May 2022
+Last Modified On: 27 Sep 2022
 
-Version: 1.1.0.0
+Version: 1.1.1.0
 ```
 
 Modification Log
@@ -62,6 +62,7 @@ Modification Log
 
  Version     | Date    | Modified By           | Change Summary
 -------------|---------|-----------------------|-------------------------
+ 01.01.01.00 | 27SEP22 | Christopher M. Hosmer | Corrected the Ubuntu version in the "General Guest Operating System (OS) Setup Steps" section.
  01.01.00.00 | 21MAY22 | Christopher M. Hosmer | Removed header and footer markings.
  01.00.00.00 | 24APR22 | Christopher M. Hosmer | -- Version 1.0.0.0.
 
@@ -481,7 +482,7 @@ General Guest Operating System (OS) Setup Steps
 
     > __Note__
     >
-    > If the "Install" window does not automatically start, then double-click the "Install Ubuntu 18.04.6 LTS" icon on the desktop.  In the "Install" window on the "Welcome" page, select "English" and click the "Continue" button.  Continue to Step 2.
+    > If the "Install" window does not automatically start, then double-click the "Install Ubuntu 22.04.4 LTS" icon on the desktop.  In the "Install" window on the "Welcome" page, select "English" and click the "Continue" button.  Continue to Step 2.
 
     01. Wait until a the Ubuntu Graphical User Interface (GUI) loads and displays the "Install" window.
 
