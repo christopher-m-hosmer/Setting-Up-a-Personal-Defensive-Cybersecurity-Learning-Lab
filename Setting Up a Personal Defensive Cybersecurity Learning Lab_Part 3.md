@@ -1,4 +1,4 @@
-Setting Up a Personal Defensive Cybersecurity Learning Lab: Part 2
+Setting Up a Personal Defensive Cybersecurity Learning Lab: Part 3
 ========================================================================
 
 License
@@ -48,13 +48,13 @@ Audit Log
 ```text
 Original Created by:
  Christopher M. Hosmer [2xCH]
-Original Created On: 24 Apr 2022
+Original Created On: 29 Oct 2022
 
 Last Modified by:
  Christopher M. Hosmer [2xCH]
-Last Modified On: 27 Sep 2022
+Last Modified On: 29 Oct 2022
 
-Version: 1.1.1.0
+Version: 1.0.0.0
 ```
 
 Modification Log
@@ -62,17 +62,14 @@ Modification Log
 
  Version     | Date    | Modified By           | Change Summary
 -------------|---------|-----------------------|-------------------------
- 01.01.02.00 | 29OCT22 | Christopher M. Hosmer | Corrected the inline links to the VMware and VirtualBox sections of the document.
- 01.01.01.00 | 27SEP22 | Christopher M. Hosmer | Corrected the Ubuntu version in the "General Guest Operating System (OS) Setup Steps" section.
- 01.01.00.00 | 21MAY22 | Christopher M. Hosmer | Removed header and footer markings.
- 01.00.00.00 | 24APR22 | Christopher M. Hosmer | -- Version 1.0.0.0.
+ 01.00.00.00 | 29OCT22 | Christopher M. Hosmer | -- Version 1.0.0.0.
 
 Summary
 ------------------------------------------------------------------------
 
 This document helps the user setup a hypervisor on a
-single virtual machine running the __Ubuntu 20.04.4 LTS (Focal Fossa)__
-[Ubuntu Desktop Linux distribution][Ubuntu-Homepage] as a guest
+single virtual machine running the __Fedora 36__
+[Fedora Workstation Linux distribution][Fedora-Homepage] as a guest
 operating system.  The document guides the user through installing
 and configuring several publicly available U.S. Department of Defense
 (DoD) tools on the guest OS so the user can exercise self-learning to
@@ -83,8 +80,8 @@ Objective
 ------------------------------------------------------------------------
 
 This guide provides directions for creating an environment that assists
-a user in learning techniques used for securing the __Ubuntu 20.04.4 LTS (Focal Fossa)__
-[Ubuntu Desktop Linux distribution][Ubuntu-Homepage] using U.S. DoD
+a user in learning techniques used for securing the __Fedora 36__
+[Fedora Workstation Linux distribution][Fedora-Homepage] using U.S. DoD
 tools and standards.  The guide does not cover how to use Linux, to
 apply security principles, or to evaluate security standards within a
 specific architecture.  It does help establish the environment needed
@@ -177,15 +174,17 @@ develop the Documentation File.
 
 [VMware Workstation Player Host OS Compatibility Guide][VWP-HostOS]
 
-[Canonical Ubuntu Homepage][Ubuntu-Homepage]
+[Fedora Homepage][Fedora-Homepage]
 
-[Canonical Ubuntu Download Webpage][Ubuntu-Downloads]
+[Fedora Download Webpage][Fedora-Downloads]
 
-[Canonical Ubuntu 20.04.x Download Webpage][Ubuntu-Downloads-20.04]
+[Fedora 36 Download Webpage][Fedora-Downloads-36]
 
-[Debian Linux Homepage][Debian-Homepage]
+[Fedora 36 Workstation x86_64 Download Webpage][Fedora-Downloads-36-Workstation-x86_64]
 
-[Debian Linux Download Webpage][Debian-Downloads]
+[Fedora 36 Documentation][Fedora-Documentation-36]
+
+[Fedora Documentation][Fedora-Documentation]
 
 [Microsoft Windows 10 Support Webpage][Windows10-Support]
 
@@ -213,15 +212,17 @@ develop the Documentation File.
 
 [VWP-HostOS]: <https://kb.vmware.com/s/article/80807> "Supported host operating systems for Workstation Pro 16.x and Workstation Player 16.x (80807)"
 
-[Ubuntu-Homepage]: <https://ubuntu.com/> "Canonical Ubuntu Homepage"
+[Fedora-Homepage]: <https://getfedora.org/> "Fedora Homepage"
 
-[Ubuntu-Downloads]: <https://ubuntu.com/download> "Canonical Ubuntu Download Webpage"
+[Fedora-Downloads]: <https://getfedora.org/en/workstation/download/> "Fedora Download Webpage"
 
-[Ubuntu-Downloads-20.04]: <https://releases.ubuntu.com/20.04/> "Canonical Ubuntu 20.04.x Download Webpage"
+[Fedora-Downloads-36]: <https://download.fedoraproject.org/pub/fedora/linux/releases/36/> "Fedora 36 Download Webpage"
 
-[Debian-Homepage]: <https://www.debian.org/> "Debian Linux Homepage"
+[Fedora-Downloads-36-Workstation-x86_64]: <https://download.fedoraproject.org/pub/fedora/linux/releases/36/Workstation/x86_64/iso/> "Fedora 36 Workstation x86_64 Download Webpage"
 
-[Debian-Downloads]: <https://www.debian.org/download> "Debian Linux Download Webpage"
+[Fedora-Documentation-36]: <https://docs.fedoraproject.org/en-US/fedora/f36/> "Fedora 36 Documentation"
+
+[Fedora-Documentation]: <https://docs.fedoraproject.org/en-US/docs/> "Fedora Documentation"
 
 [Windows10-Support]: <https://support.microsoft.com/en-us/windows?ui=en-US&rs=en-US&ad=US#WindowsVersion=Windows_10> "Microsoft Windows 10 Support Webpage"
 
@@ -243,15 +244,15 @@ General VirtualBox Virtual Machine Setup Steps
 >>
 >> Do not complete this section if you are going to complete the [General VMware Workstation Player Virtual Machine Setup Steps](#general-vmware-workstation-player-virtual-machine-setup-steps) section.
 
-01. [Download][Ubuntu-Downloads-20.04] the __Ubuntu 20.04.x LTS Desktop Linux__ distribution ISO image file (~3GB).
+01. [Download][Fedora-Downloads-36-Workstation-x86_64] the __Fedora 36 Workstation__ distribution ISO image file (~2GB).
 
-02. Right-click the "SHA256SUMS" link and select the "Save link as" menu item.
+02. Right-click the "Fedora-Workstation-36-1.5-x86_64-CHECKSUM" link and select the "Save link as" menu item.
 
-03. In the file selection window, click the "Downloads" bookmark in the left pane, change the filename to `Ubuntu20-SHA256SUMS.txt`, and click the "Save" button.
+03. In the file selection window, click the "Downloads" bookmark in the left pane, change the filename to `Fedora-Workstation-36-1.5-x86_64-CHECKSUM.txt`, and click the "Save" button.
 
     > __Note__
     >
-    > The "SHA256SUMS" is a text file, so left-clicking will open it within the browser instead of downloading and saving it to the default download directory.
+    > The "Fedora-Workstation-36-1.5-x86_64-CHECKSUM" is a text file, so left-clicking may open it within the browser instead of downloading and saving it to the default download directory.
 
 04. Type `powershell` in the Windows Search Bar and start a `Windows PowerShell` session.
 
@@ -266,17 +267,17 @@ General VirtualBox Virtual Machine Setup Steps
 
     ```powershell
     # -Include: Only show the names that match the patterns
-    Get-ChildItem .\* -Include '*Ubuntu*'
+    Get-ChildItem .\* -Include '*Fedora-Workstation*'
     ```
 
-07. Verify the __Integrity__ of the "Ubuntu 20.04.x LTS Desktop Linux" distribution ISO image file.
+07. Verify the __Integrity__ of the "Fedora 36 Workstation" distribution ISO image file.
 
-    01. Calculate the SHA-256 hash of the downloaded "Ubuntu 20.04.x LTS Desktop Linux" distribution ISO image file:
+    01. Calculate the SHA-256 hash of the downloaded "Fedora 36 Workstation" distribution ISO image file:
 
         ```powershell
         # .Hash: Only return the hash value
         # .ToLower(): Convert the results to all lowercase
-        (Get-FileHash -Algorithm SHA256 .\ubuntu-20.04.*-desktop-amd64.iso).Hash.ToLower()
+        (Get-FileHash -Algorithm SHA256 .\Fedora-Workstation-Live-x86_64-36-*.iso).Hash.ToLower()
         ```
 
         > __Note__
@@ -286,10 +287,10 @@ General VirtualBox Virtual Machine Setup Steps
         > ```powershell
         > # The `certutil` application doesn't seem to accept glob patterns, so the full filename is required.
         > # The following command uses an example filename.
-        > certutil -hashfile .\ubuntu-20.04.4-desktop-amd64.iso SHA256
+        > certutil -hashfile .\Fedora-Workstation-Live-x86_64-36-1.5.iso SHA256
         > ```
 
-    02. Display the SHA-256 hash provided in the file downloaded from the "Ubuntu" website:
+    02. Display the SHA-256 hash provided in the file downloaded from the "Fedora" website:
 
         ```powershell
         # |: Pipe the results of `Get-Content` into `Select-String`
@@ -297,7 +298,7 @@ General VirtualBox Virtual Machine Setup Steps
         # |: Pipe the results of `Select-String` into `ForEach-Object`
         # .Split: Split the string using the specified character as the field delimiter
         # [0]: Only return the first result
-        Get-Content .\Ubuntu20-SHA256SUMS.txt | Select-String -Pattern 'ubuntu-20.04.*-desktop-amd64.iso' | ForEach-Object { ([string]$_).Split(' ')[0] }
+        Get-Content .\Fedora-Workstation-36-1.5-x86_64-CHECKSUM.txt | Select-String -Pattern 'Fedora-Workstation-Live-x86_64-36-.*.iso' | ForEach-Object { ([string]$_).Split(' ')[3] }
         ```
 
     03. Compare the two hashes; if they match then the __Integrity__ of the download is confirmed, else repeat the previous steps to download the file again.
@@ -309,10 +310,10 @@ General VirtualBox Virtual Machine Setup Steps
 10. Click the "Machine" menu and select the "New..." menu item.
 
 11. In the "Create Virtual Machine" window, fill in the "Name and operating system" form with the following information and then click the "Next >" button:
-    * __Name__: WS-U20-01
+    * __Name__: WS-F36-01
     * __Machine Folder__: *leave the default*
     * __Type__: Linux
-    * __Version__: Ubuntu (64-bit)
+    * __Version__: Fedora (64-bit)
 
 12. In the "Create Virtual Machine" window, type "4096" in the "Memory size" form and then click the "Next >" button.
 
@@ -359,15 +360,15 @@ General VMware Workstation Player Virtual Machine Setup Steps
 >>
 >> Do not complete this section if you have already completed the [General VirtualBox Virtual Machine Setup Steps](#general-virtualbox-virtual-machine-setup-steps) section.
 
-01. [Download][Ubuntu-Downloads-20.04] the __Ubuntu 20.04.x LTS Desktop Linux__ distribution ISO image file (~3GB).
+01. [Download][Fedora-Downloads-36-Workstation-x86_64] the __Fedora 36 Workstation__ distribution ISO image file (~2GB).
 
-02. Right-click the "SHA256SUMS" link and select the "Save link as" menu item.
+02. Right-click the "Fedora-Workstation-36-1.5-x86_64-CHECKSUM" link and select the "Save link as" menu item.
 
-03. In the file selection window, click the "Downloads" bookmark in the left pane, change the filename to `Ubuntu20-SHA256SUMS.txt`, and click the "Save" button.
+03. In the file selection window, click the "Downloads" bookmark in the left pane, change the filename to `Fedora-Workstation-36-1.5-x86_64-CHECKSUM.txt`, and click the "Save" button.
 
     > __Note__
     >
-    > The "SHA256SUMS" is a text file, so left-clicking will open it within the browser instead of downloading and saving it to the default download directory.
+    > The "Fedora-Workstation-36-1.5-x86_64-CHECKSUM" is a text file, so left-clicking may open it within the browser instead of downloading and saving it to the default download directory.
 
 04. Type `powershell` in the Windows Search Bar and start a `Windows PowerShell` session.
 
@@ -382,17 +383,17 @@ General VMware Workstation Player Virtual Machine Setup Steps
 
     ```powershell
     # -Include: Only show the names that match the patterns
-    Get-ChildItem .\* -Include '*Ubuntu*'
+    Get-ChildItem .\* -Include '*Fedora-Workstation*'
     ```
 
-07. Verify the __Integrity__ of the "Ubuntu 20.04.x LTS Desktop Linux" distribution ISO image file.
+07. Verify the __Integrity__ of the "Fedora 36 Workstation" distribution ISO image file.
 
-    01. Calculate the SHA-256 hash of the downloaded "Ubuntu 20.04.x LTS Desktop Linux" distribution ISO image file:
+    01. Calculate the SHA-256 hash of the downloaded "Fedora 36 Workstation" distribution ISO image file:
 
         ```powershell
         # .Hash: Only return the hash value
         # .ToLower(): Convert the results to all lowercase
-        (Get-FileHash -Algorithm SHA256 .\ubuntu-20.04.*-desktop-amd64.iso).Hash.ToLower()
+        (Get-FileHash -Algorithm SHA256 .\Fedora-Workstation-Live-x86_64-36-*.iso).Hash.ToLower()
         ```
 
         > __Note__
@@ -402,10 +403,10 @@ General VMware Workstation Player Virtual Machine Setup Steps
         > ```powershell
         > # The `certutil` application doesn't seem to accept glob patterns, so the full filename is required.
         > # The following command uses an example filename.
-        > certutil -hashfile .\ubuntu-20.04.4-desktop-amd64.iso SHA256
+        > certutil -hashfile .\Fedora-Workstation-Live-x86_64-36-1.5.iso SHA256
         > ```
 
-    02. Display the SHA-256 hash provided in the file downloaded from the "Ubuntu" website:
+    02. Display the SHA-256 hash provided in the file downloaded from the "Fedora" website:
 
         ```powershell
         # |: Pipe the results of `Get-Content` into `Select-String`
@@ -413,7 +414,7 @@ General VMware Workstation Player Virtual Machine Setup Steps
         # |: Pipe the results of `Select-String` into `ForEach-Object`
         # .Split: Split the string using the specified character as the field delimiter
         # [0]: Only return the first result
-        Get-Content .\Ubuntu20-SHA256SUMS.txt | Select-String -Pattern 'ubuntu-20.04.*-desktop-amd64.iso' | ForEach-Object { ([string]$_).Split(' ')[0] }
+        Get-Content .\Fedora-Workstation-36-1.5-x86_64-CHECKSUM.txt | Select-String -Pattern 'Fedora-Workstation-Live-x86_64-36-.*.iso' | ForEach-Object { ([string]$_).Split(' ')[3] }
         ```
 
     03. Compare the two hashes; if they match then the __Integrity__ of the download is confirmed, else repeat the previous steps to download the file again.
@@ -436,12 +437,12 @@ General VMware Workstation Player Virtual Machine Setup Steps
 
 16. In the "Guest Operating System" page, verify that the "Linux" radio button is checked; check the radio button, if required.
 
-17. In the "Guest Operating System" page, verify that the "Ubuntu 64-bit" menu item is selected in the "Version:" menu; select the "Ubuntu 64-bit" menu item, if required.
+17. In the "Guest Operating System" page, verify that the "Fedora 64-bit" menu item is selected in the "Version:" menu; select the "Fedora 64-bit" menu item, if required.
 
 18. Click the "> Next" button.
 
 19. In the "Virtual Machine Name" page, fill in the form with the following information and then click the "> Next" button:
-    * __Name__: WS-U20-01
+    * __Name__: WS-F36-01
     * __Location__: *leave the default*
 
 20. In the "Disk Size" page, change the disk size to "64.00 GB" in the text box, select the "Split virtual disk into multiple files" radio button, and click the "> Next" button.
@@ -479,96 +480,112 @@ General VMware Workstation Player Virtual Machine Setup Steps
 General Guest Operating System (OS) Setup Steps
 ------------------------------------------------------------------------
 
-01. After the virtual machine boots, it will launch the operating system installer.
+01. After the virtual machine boots, it will present a GRUB menu.
+
+    01. Using the arrow keys, select the "Start Fedora-Workstation-Live 36" menu item.
+
+    02. Press the "Return" key.
+
+02. After the guest host boots, it will launch the "Welcome to Fedora" window; click the "Install to Hard Drive" button.
 
     > __Note__
     >
-    > If the "Install" window does not automatically start, then double-click the "Install Ubuntu 22.04.4 LTS" icon on the desktop.  In the "Install" window on the "Welcome" page, select "English" and click the "Continue" button.  Continue to Step 2.
+    > If the "Welcome to Fedora" window does not automatically start, then search for and execute the "Install to Hard Drive" application.
 
-    01. Wait until a the Ubuntu Graphical User Interface (GUI) loads and displays the "Install" window.
+03. In the "FEDORA 36 INSTALLATION" window on the "WELCOME TO FEDORA 36" page:
 
-    02. In the "Install" window on the "Welcome" page, select "English" and click the "Install Ubuntu" button.
+    01. Select "English" in the left pane.
 
-02. In the "Install" window on the "Keyboard layout" page, select "English (US) for both options and click the "Continue" button.
+    02. Select "English (United States)" in the right pane.
 
-03. In the "Install" window on the "Updates and other software" page, select the "Normal installation" radio button, check the "Download updates while installing Ubuntu" checkbox, check the "Install third-party software for graphics and Wi-Fi hardware and additional media formats" checkbox, and click the "Continue" button.
+    03. Click the "Continue" button.
 
-04. In the "Install" window on the "Installation type" page, select the "Erase disk and install Ubuntu" radio button and click the "Install Now" button.
+04. In the "FEDORA 36 INSTALLATION" window on the "INSTALLATION SUMMARY" page:
 
-    > __Notes__
-    >
-    > * This will not erase the hard drive on which the host operating system is installed.  This will only affect the virtual hard drive that was created for the virtual machine's 'guest operating system.
-    > * A secure system should use full disk encryption, which can be done during installation by clicking the "Advanced features..." button, selecting the "Use LVM with the new Ubuntu installation" radio button, and checking the "Encrypt the new Ubuntu installation for security" checkbox, but disk encryption should be left as a manual task so the user can further research this capability, the impacts, and how to apply the required settings after installation.
+    01. Click the "Installation Destination" button underneath the "SYSTEM" heading.
 
-05. On the "Write the changes to disk?" window click the "Continue" button.
+    02. On the "INSTALLATION DESTINATION" page click the "Done" button.
 
-06. In the "Install" window on the "Where are you?" page, type "Huntsville" in the text box, then select "Huntsville (Alabama, United States)" in the menu, and then click the "Continue" button.
+        > __Notes__
+        >
+        > * This will not erase the hard drive on which the host operating system is installed.  This will only affect the virtual hard drive that was created for the virtual machine's 'guest operating system.
+        > * A secure system should use full disk encryption, which can be done during installation by checking the "Encrypt my data." checkbox, but disk encryption should be left as a manual task so the user can further research this capability, the impacts, and how to apply the required settings after installation.
 
-07. In the "Install" window on the "Who are you?" page, fill out the form with the following information:
-    * __Username__: *any descriptive name*
-    * __Computer Name__: WS-U20-01
-    * __Password__: *a complex password or passphrase that is longer than 12 characters*
+    03. Click the "Time & Date" button underneath the "LOCALIZATION" heading.
 
-08. Verify that the "Require my password to log in" radio button is selected and then click the "Continue" button.
+    04. Use the "Region" and "City" menus to set the timezone.
 
-09. Wait for the operating system to finish installing; when the "Installation Complete" window appears click the "Restart Now" button.
+    05. Click the "Done" button.
 
-10. When the "Please remove the installation medium, then press ENTER:" message appears, press the "Enter" button.
+    06. Click the  "Begin Installation" button.
+
+05. Wait for the operating system to finish installing; when the "Complete!" message appears above the progress bar, click the "Finish Installation" button.
+
+06. Manually reboot the Guest OS:
+
+    01. Click the top-right corner of the "top bar" to activate the "System" menu.
+
+    02. Select the "Power Off/Log Out" menu item.
+
+    03. Select teh "Restart" menu item.
+
+    04. On the "Restart" window, click the "Restart" button.
 
 ------------------------------------
 
 General Guest Operating System (OS) First Boot Steps
 ------------------------------------------------------------------------
 
-01. On the logon window, click the user created during the installation.
+01. On first boot the system will automatically login and display the "Setup" window.  Click the "Start Setup" button at the bottom of the "Setup" window.
 
-02. Enter the password set for the user during the installation process.
+02. On the "Privacy" page:
 
-03. If the "Software Updater" window appears, click the "Install Now" button and enter your user password when prompted.
+    01. Turn the "Location Services" rocker to the "off" position.
+
+    02. Turn the "Automatic Problem Reporting" rocker to the "off" position.
+
+    03. Click the "Next" button.
+
+03. On the "Third-Party Repositories" page:
+
+    01. Click the "Enable Third-Party Repositories" button.
+
+    02. Click the "Next" button.
+
+04. On the "Online Accounts" page, click the "Skip" button.
+
+05. On the "About You" page:
 
     > __Note__
     >
-    > It might take a few minutes for the "Software Updater" window to appear.
+    > Fedora Workstation disables the "root" account by default.  The initial user is a member of the "wheel" group with "sudo" privileges.
 
-04. In the "Online Accounts" window click the "Skip" button.
+    01. Fill out the form with the following information:
+        * __Full Name__: *any descriptive name*
+        * __Username__: *any descriptive name*
 
-05. In the "Livepatch" window click the "Next" button.
+    02. Click the "Next" button.
 
-06. In the "Help improve Ubuntu" window select the "No, don't send system info" radio button and click the "Next" button.
+06. On the "Password" page:
 
-07. In the "Privacy" window turn the "Location Services" rocker to "off" position and click the "Next" button.
+    01. Fill out the form with the following information:
+        * __Password__: *a complex password or passphrase that is longer than 12 characters*
 
-08. In the "Ready to go" window click the "Done" button.
+    02. Click the "Next" button.
 
-    >> :warning: **CAUTION**
-    >>
-    >> If updates are being installed, wait until the software updates complete before continuing; click on the "Software Updater" icon and click the "Restart Now" button, if prompted.  After the system reboots, log back into a desktop session.
+07. The desktop will refresh; click the "No Thanks" button on the "Welcome to GNOME 42" window when it appears.
 
-09. Click the "Activities" button in the upper-left corner of the "top bar" on the desktop and type "Terminal" in the search bar.
+08. Click the "Activities" button in the upper-left corner of the "top bar" on the desktop and type "Terminal" in the search bar.
 
-10. Click the "Terminal" icon.
+09. Click the "Terminal" icon.
 
-11. If using [VirtualBox][VB-Homepage] as the hypervisor:
+10. Type `sudo hostnamectl hostname WS-F36-01` in the terminal and enter your user password when prompted.
 
-    01. Type `sudo apt install build-essential dkms linux-headers-$(uname -r)` in the terminal and enter your user password when prompted.
+11. Type `sudo dnf update -y` to update the system.
 
-    02. Type `y` in the terminal at the "Do you want to continue [Y/n]" prompt.
+12. If using [VirtualBox][VB-Homepage] as the hypervisor:
 
-    03. Type `exit` to terminate the terminal.
-
-    04. In the "VirtualBox Graphical User Interface" virtual machine window, click the "Devices" menu and select the "Insert Guest Additions CD image..." menu item.
-
-    05. In the guest operating system, in the ""VBox_GAs_x.y.z" contains software intended to be automatically started. Would you like to run it?" prompt click the "Run" button and enter your user password when prompted.
-
-    06. After the installer finishes, click the down arrow in the upper-right corner of the "top bar" on the desktop, click the "Power Off / Log Out" menu, and select the "Power Off..." menu item.
-
-    07. In the "Power Off" prompt click the "Restart" button.
-
-    08. After the system reboots, log back into a desktop session.
-
-12. If using [VMware Workstation Player][VWP-Homepage] as the hypervisor:
-
-    01. Type `sudo apt list --installed *vmware* open-vm*` in the terminal and enter your user password when prompted.
+    01. Type `sudo dnf list installed *virtualbox*` in the terminal.
 
     02. Verify that the command returns the following information:
 
@@ -577,94 +594,132 @@ General Guest Operating System (OS) First Boot Steps
         > Version numbers may be different than the ones shown below.
 
         ```text
-        Listing... Done
-        open-vm-tools-desktop/focal-updates,now 2:11.3.0-2ubuntu0~ubuntu20.04.2 amd64 [installed]
-        open-vm-tools/focal-updates,now 2:11.3.0-2ubuntu0~ubuntu20.04.2 amd64 [installed,automatic]
-        xserver-xorg-video-vmware/focal,now 1:13.3.0-3 amd64 [installed,automatic]
+        Installed Packages
+        virtualbox-guest-additions.x86_64    6.1.38-1.fc36    @updates
         ```
 
-    03. If any of the packages are missing install them using the `sudo apt install open-vm-tools open-vm-tools-desktop xserver-xorg-video-vmware` command.
+    03. If the package is missing install it using the `sudo dnf install virtualbox-guest-additions` command.
 
-13. Resize the virtual machine window in the host operating system and the guest operating system should resize automatically.
+13. If using [VMware Workstation Player][VWP-Homepage] as the hypervisor:
+
+    01. Type `sudo dnf list installed *vmware* open-vm*` in the terminal.
+
+    02. Verify that the command returns the following information:
+
+        > __Note__
+        >
+        > Version numbers may be different than the ones shown below.
+
+        ```text
+        Installed Packages
+        open-vm-tools.x86_64            12.1.0-1.fc36    @updates 
+        open-vm-tools-desktop.x86_64    12.1.0-1.fc36    @updates 
+        xorg-x11-drv-vmware.x86_64      13.2.1-16.fc35   @anaconda
+        ```
+
+    03. If any of the packages are missing install them using the `sudo dnf install open-vm-tools open-vm-tools-desktop xorg-x11-drv-vmware` command.
+
+14. Resize the virtual machine window in the host operating system and the guest operating system should resize automatically.
+
+15. Manually reboot the Guest OS:
+
+    01. Click the top-right corner of the "top bar" to activate the "System" menu.
+
+    02. Select the "Power Off/Log Out" menu item.
+
+    03. Select teh "Restart" menu item.
+
+    04. On the "Restart" window, click the "Restart" button.
+
+16. After the Guest OS restarts, log back into the desktop:
+
+    01. On the logon window, click the user created during the post installation "Setup" process.
+
+    02. Enter the password set for the user during the post installation "Setup" process.
 
 ------------------------------------
 
 General DoD Cybersecurity Software Download Steps
 ------------------------------------------------------------------------
 
-01. On the side "dash" bar, click the "Firefox" icon.
+> __Note__
+>
+> DoD does not publish STIG or SCAP content for the Fedora Linux distribution.  However, [Fedora is the upstream distribution that Red Hat uses to build Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/topics/linux/fedora-vs-red-hat-enterprise-linux), a Linux distribution widely used within DoD and covered by DISA STIGs and SCAP content.  This section will reference the RHEL STIGs and SCAP content since versions for Fedora are not available.  Keep in mind that there are differences, some of them significant, between Fedora and RHEL, so the RHEL STIG content and SCAP results against Fedora may not be accurate, but they will be enough to help the reader gain an understanding of Fedora.  Also keep in mind that implementing the "Fix Text" section of a security control for RHEL may break a Fedora install.  The importance of using this information is to better understand Fedora.  Research content and understand the implication of setting changes prior to making them.
 
-02. Navigate to the [DoD Cyber Exchange homepage (Public)][CX-Homepage] at the `https://public.cyber.mil` URL.
+01. Click the "Activities" button on the "top bar" to expose the "dash" at the bottom of the screen.
 
-03. On the "DoD Cyber Exchange" website, click the "SRGs/STIGs" button at the top of the webpage.
+02. On the "dash" bar, click the "Firefox" icon.
 
-04. On the left navigation bar of the "Security Technical Implementation Guides (STIGs)" webpage click the "Automation" menu and select the "Security Content Automation Protocol (SCAP)" menu item.
+03. Navigate to the [DoD Cyber Exchange homepage (Public)][CX-Homepage] at the `https://public.cyber.mil` URL.
 
-05. Under the "SCAP 1.2 CONTENT" section, download the "Canonical Ubuntu 20.04 LTS STIG Benchmark - Ver x, Rel x" package and save it to the guest OS.
+04. On the "DoD Cyber Exchange" website, click the "SRGs/STIGs" button at the top of the webpage.
 
-06. Under the "SCAP TOOLS" section, download the "SCC x.y Ubuntu 18 AMD64" package and save it to the guest OS.
+05. On the left navigation bar of the "Security Technical Implementation Guides (STIGs)" webpage click the "Automation" menu and select the "Security Content Automation Protocol (SCAP)" menu item.
 
-    > __Note__
-    >
-    > Download the Ubuntu 20 package once it is available.
+06. Under the "SCAP 1.2 CONTENT" section, download the "Red Hat Enterprise Linux 8 STIG Benchmark - Ver x, Rel x" package and save it to the guest OS.
 
-07. Right-click the "SCC x.y.z Checksum file" and select the "Save Link As..." menu item.
+07. Under the "SCAP TOOLS" section, download the "SCC 5.6 RHEL 9/Oracle Linux 9 x86 64" package and save it to the guest OS.
 
-08. In the file selection window, click the "Downloads" bookmark in the "Places" pane and click the "Save" button.
+08. Download the "SCC 5.6 RPM GPG key" package and save it to the guest OS.
+
+09. Right-click the "SCC x.y.z Checksum file" and select the "Save Link As..." menu item.
+
+10. In the file selection window, click the "Downloads" bookmark in the "Places" pane and click the "Save" button.
 
     > __Note__
     >
     > The "SCC x.y.z Checksum file" is a text file, so left-clicking will open it within the browser instead of downloading and saving it to the default downloads directory.
 
-09. On the left navigation bar of the "Security Technical Implementation Guides (STIGs)" webpage click the "SRG/STIG Tools and Viewing Guidance" menu item.
+11. On the left navigation bar of the "Security Technical Implementation Guides (STIGs)" webpage click the "SRG/STIG Tools and Viewing Guidance" menu item.
 
-10. Under the "STIG Viewing Tools" section, download the "STIG Viewer x.y-Linux" package and save it to the guest OS.
+12. Under the "STIG Viewing Tools" section, download the "STIG Viewer x.y-Linux" package and save it to the guest OS.
 
-11. Right-click the "STIG Viewer x.y Hashes" and select the "Save Link As..." menu item.
+13. Right-click the "STIG Viewer x.y Hashes" and select the "Save Link As..." menu item.
 
-12. In the file selection window, click the "Downloads" bookmark in the "Places" pane and click the "Save" button.
+14. In the file selection window, click the "Downloads" bookmark in the "Places" pane and click the "Save" button.
 
     > __Note__
     >
     > The "STIG Viewer x.y Hashes" is a text file, so left-clicking will open it within the browser instead of downloading and saving it to the default downloads directory.
 
-13. On the left navigation bar of the "Security Technical Implementation Guides (STIGs)" webpage click the "Document Library" menu item.
+15. On the left navigation bar of the "Security Technical Implementation Guides (STIGs)" webpage click the "Document Library" menu item.
 
-14. On the right side of the "Document Library" page under the "STIG TOPICS" heading, check the "Operating Systems" checkbox.
+16. On the right side of the "Document Library" page under the "STIG TOPICS" heading, check the "Operating Systems" checkbox.
 
-15. Download the "Canonical Ubuntu 20.04 LTS STIG - Ver x, Rel y" file.
+17. Download the "Red Hat Enterprise Linux 8 STIG - Ver x, Rel x" file.
 
-16. On the side "dash" bar, click the "Files" icon.
+18. On the "dash" bar, click the "Files" icon.
 
-17. In the "Files" application, click on the "Downloads" bookmark in the left navigation pane.
+19. In the "Files" application, click on the "Downloads" bookmark in the left navigation pane.
 
-18. Verify that there are two (2) text files and four (4) ZIP archives in the directory:
+20. Verify that there are two (2) text files and five (5) ZIP archives in the directory:
 
     > __Note__
     >
     > Version numbers may be different than the ones shown below.
 
     ```text
-    SCC_5.4.2_Checksums.txt
-    U_STIGViewer_2-16_Hashes.txt
-    scc-5.4.2_ubuntu18_amd64_bundle.zip
-    U_CAN_Ubuntu_20-04_LTS_V1R2_STIG_SCAP_1-2_Benchmark.zip
-    U_CAN_Ubuntu_20-04_LTS_V1R4_STIG.zip
-    U_STIGViewer_2-16_Linux.zip
+    RPM-GPG-KEY-scc-5.6.zip
+    SCC_5.6_Checksums.txt
+    scc-5.6_rhel9_oracle-linux9_x86_64_bundle.zip
+    U_RHEL_8_V1R7_STIG_SCAP_1-2_Benchmark.zip
+    U_RHEL_8_V1R8_STIG.zip
+    U_STIGViewer_2-17_Hashes.txt
+    U_STIGViewer_2-17_Linux.zip
     ```
 
-19. Click the "Activities" button in the upper-left corner of the "top bar" on the desktop and type "Terminal" in the search bar.
+21. Click the "Activities" button in the upper-left corner of the "top bar" on the desktop and type "Terminal" in the search bar.
 
-20. Click the "Terminal" icon.
+22. Click the "Terminal" icon.
 
-21. Navigate to the `Downloads` directory:
+23. Navigate to the `Downloads` directory:
 
     ```bash
     # Use a tilde-prefix to automatically insert the user's home directory as the first part of the path.
     cd ~/Downloads
     ```
 
-22. Verify that the directory has the same six (6) files viewed in the `Files` application:
+24. Verify that the directory has the same seven (7) files viewed in the `Files` application:
 
     ```bash
     # -1: Display results in a single column
@@ -672,7 +727,7 @@ General DoD Cybersecurity Software Download Steps
     ls -1X
     ```
 
-23. Verify the __Integrity__ of the "SCAP Compliance Checker" ZIP archive.
+25. Verify the __Integrity__ of the "SCAP Compliance Checker" ZIP archive.
 
     01. Calculate the SHA-256 hash of the downloaded "SCAP Compliance Checker" ZIP archive:
 
@@ -680,7 +735,7 @@ General DoD Cybersecurity Software Download Steps
         #  |: Pipe the results from 'sha256sum' into 'cut'
         # -d: Use the specified character as the field delimiter
         # -f: Only display the first field
-        sha256sum scc-*_ubuntu18_amd64_bundle.zip | cut -d ' ' -f 1
+        sha256sum scc-*_rhel9_oracle-linux9_x86_64_bundle.zip | cut -d ' ' -f 1
         ```
 
     02. Display the SHA-256 hash provided in the file downloaded from the "DoD Cyber Exchange" website:
@@ -693,13 +748,13 @@ General DoD Cybersecurity Software Download Steps
         # -E: Interpret PATTERNS as extended regular expressions
         #  |: Pipe the results from 'grep' into 'cut'
         # -d: Use the specified character as the field delimiter
-        # -f: Only display the fifth field
-        grep -A 1 -E 'scc-.+_ubuntu18_amd64_bundle.zip' SCC_*_Checksums.txt | grep -v -E 'scc-.+_ubuntu18_amd64_bundle.zip' | cut -d ' ' -f 5
+        # -f: Only display the third field
+        grep -A 1 -E 'scc-.+_rhel9_oracle-linux9_x86_64_bundle.zip' SCC_*_Checksums.txt | grep -v -E 'scc-.+_rhel9_oracle-linux9_x86_64_bundle.zip' | cut -d ' ' -f 3
         ```
 
     03. Compare the two hashes; if they match then the __Integrity__ of the download is confirmed, else repeat the previous steps to download the file again.
 
-24. Verify the __Integrity__ of the "STIG Viewer" ZIP archive.
+26. Verify the __Integrity__ of the "STIG Viewer" ZIP archive.
 
     01. Calculate the SHA-256 hash of the downloaded "STIG Viewer" ZIP archive:
 
@@ -726,11 +781,11 @@ General DoD Cybersecurity Software Download Steps
 
     03. Compare the two hashes; if they match then the __Integrity__ of the download is confirmed, else repeat the previous steps to download the file again.
 
-25. Close the "Terminal" application.
+27. Close the "Terminal" application.
 
-26. Close the "Files" application.
+28. Close the "Files" application.
 
-27. Close the "Firefox" browser.
+29. Close the "Firefox" browser.
 
 ------------------------------------
 
@@ -743,19 +798,23 @@ General DoD Cybersecurity Software Setup Steps
 
 03. Type `sudo -sE` in the terminal and enter your user password when prompted to enter a privileged session.
 
-04. Navigate to the download folder by executing the `cd ~/Downloads` command.
+04. Navigate to the download folder by executing the `cd Downloads` command.
 
 05. Unzip the "STIG Viewer" application by executing the `unzip -d /opt/stigviewer 'U_STIGViewer_*_Linux.zip'` command.
 
-06. Unzip the "SCAP Compliance Checker" installer by executing the `unzip 'scc-*_ubuntu*.zip'` command.
+06. Unzip the "SCAP Compliance Checker" RPM GPG key by executing the `unzip 'RPM-GPG-KEY-scc-*.zip'` command.
 
-07. Change to the new directory by executing the `cd scc-*_ubuntu*_*/` command.
+07. Install the "SCAP Compliance Checker" RPM GPG key by executing the `rpm --import RPM-GPG-KEY-scc-*[0-9]` command.
 
-08. Install the "SCAP Compliance Checker" by executing the `dpkg -i scc-*.ubuntu.*_*.deb` command.
+08. Unzip the "SCAP Compliance Checker" installer by executing the `unzip 'scc-*_rhel9*.zip'` command.
 
-09. Change to the installation directory by executing the `cd /opt` command.
+09. Change to the new directory by executing the `cd scc-*_rhel9*_*/` command.
 
-10. Type `./scc/scc &` to start the SCAP Compliance Checker.
+10. Install the "SCAP Compliance Checker" by executing the `dnf install -y scc-*.rhel9.*_*.rpm` command.
+
+11. Change to the installation directory by executing the `cd /opt` command.
+
+12. Type `./scc/scc &` to start the SCAP Compliance Checker.
 
     01. In the "Content" section under the "SCAP" tab in the "Stream" column, check the "Linux" checkbox.
 
@@ -765,65 +824,77 @@ General DoD Cybersecurity Software Setup Steps
 
     04. In the "Install Content" window, enable all radio buttons and click the "Select Content File(s) to Install" button.
 
-    05. In the file selection window, click the "Downloads" bookmark in the "Places" pane.
+    05. In the file selection window, click the "+ Other Locations" bookmark in the "Places" pane.
 
-    06. Select the "U_CAN_Ubuntu_20-04_LTS_VxRy_STIG_SCAP_1-2_Benchmark.zip" file and click the "Open" button.
+    06. Navigate to the user's "Downloads" directory.
 
-    07. In the "Install Content" window, click the "Install" button.
+    07. Select the "U_RHEL_8_V1R7_STIG_SCAP_1-2_Benchmark.zip" file and click the "Open" button.
 
-    08. In the "Scan" section on the left of the application interface, click the "Start Scan" button.
+    08. In the "Install Content" window, click the "Install" button.
 
-    09. On the side "dash" bar, click the "Files" icon.
+    09. Click the "Options" menu and select the "Show Options" menu item.
 
-    10. In the "Files" application, click on the "Home" bookmark in the left navigation pane.
+    10. In the "Scanning Options" section under "SCAP Processing" check the "Run all SCAP content regardless of applicability" checkbox.
 
-    11. Double-click the "SCC" directory in the right navigation pane.
+    11. Click the "Save" button.
 
-    12. Double-click the "Sessions" directory in the right navigation pane.
+    12. In the "Scan" section on the left of the application interface, click the "Start Scan" button.
 
-    13. Double-click the directory in the right navigation pane that has the recent date-timestamp of the SCC scan.
+    13. On the "dash" bar, click the "Files" icon.
 
-    14. Double-click the "SCC_Summary_Viewer_*.html" file to open the scan results.
+    14. In the "Files" application, click on the "Home" bookmark in the left navigation pane.
 
-    15. Click the "HTML" link under the "All Settings" column to open the "All Settings Report."
+    15. Double-click the "SCC" directory in the right navigation pane.
 
-    16. Review the report to get an idea of the security posture for a default installation of [Canonical Ubuntu][Ubuntu-Homepage].
+    16. Double-click the "Sessions" directory in the right navigation pane.
+
+    17. Double-click the directory in the right navigation pane that has the recent date-timestamp of the SCC scan.
+
+    18. Double-click the "SCC_Summary_Viewer_*.html" file to open the scan results.
+
+    19. Click the "HTML" link under the "All Settings" column to open the "All Settings Report."
+
+    20. Review the report to get an idea of the security posture for a default installation of [Fedora][Fedora-Homepage].
 
         >> :warning: **CAUTION**
         >>
         >> Do not skip over reviewing results that passed; those settings may very well be ones that have been modified on a live or competition system, so the user needs to be familiar with those in addition to the checks that failed.
 
-11. Type `./stigviewer/STIGViewer &` to start the STIG Viewer.
+13. Type `./stigviewer/STIGViewer &` to start the STIG Viewer.
 
     01. At the top of the application in the menu bar, click the "File" menu and select "Import STIG..." menu item.
 
-    02. In the file selection window, click the "Downloads" bookmark in the "Places" pane.
+    02. In the file selection window, click the "+ Other Locations" bookmark in the "Places" pane.
 
-    03. Select the "U_CAN_Ubuntu_20-04_LTS_VxRy_STIG.zip" file and click the "Open" button.
+    03. Navigate to the user's "Downloads" directory.
 
-    04. In the "STIG Explorer" tab under the "STIGs" section, check the "Canonical Ubuntu 20.04 LTS ..." entry.
+    04. Select the "U_RHEL_8_VxRx_STIG.zip" file and click the "Open" button.
 
-    05. At the top of the application in the menu bar, click the "Checklist" menu and select "Create Checklist - Check Marked STIG(s)" menu item.
+    05. In the "STIG Explorer" tab under the "STIGs" section, check the "Red Hat Enterprise Linux 8 ..." entry.
 
-    06. With the "*New Checklist" tab active, at the top of the application in the menu bar, click the "Import" menu and select "XCCDF Results File..." menu item.
+    06. At the top of the application in the menu bar, click the "Checklist" menu and select "Create Checklist - Check Marked STIG(s)" menu item.
 
-    07. In the file selection window, click on the "Home" bookmark in the left navigation pane.
+    07. With the "*New Checklist" tab active, at the top of the application in the menu bar, click the "Import" menu and select "XCCDF Results File..." menu item.
 
-    08. Double-click the "SCC" directory in the right navigation pane.
+    08. In the file selection window, click the "+ Other Locations" bookmark in the "Places" pane.
 
-    09. Double-click the "Sessions" directory in the right navigation pane.
+    09. Navigate to the user's "Home" directory.
 
-    10. Double-click the directory in the right navigation pane that has the recent date-timestamp of the SCC scan.
+    10. Double-click the "SCC" directory in the right navigation pane.
 
-    11. Double-click the "Results" directory in the right navigation pane.
+    11. Double-click the "Sessions" directory in the right navigation pane.
 
-    12. Double-click the "SCAP" directory in the right navigation pane.
+    12. Double-click the directory in the right navigation pane that has the recent date-timestamp of the SCC scan.
 
-    13. Double-click the "XML" directory in the right navigation pane.
+    13. Double-click the "Results" directory in the right navigation pane.
 
-    14. Select the file with "XCCDF-Results" in the filename and click the "Open" button.
+    14. Double-click the "SCAP" directory in the right navigation pane.
 
-    15. Review all rules by selecting each in the middle pane of the "*New Checklist" tab to gain an understanding of the rule ("Rule Title"), the possible risk to the system if the rule is not followed ("Discussion" section), how to verify that the rule is implemented ("Check Text" section), and how to apply the setting(s) if absent or incorrect on the system ("Fix Text" section) for an installation of [Canonical Ubuntu][Ubuntu-Homepage].
+    15. Double-click the "XML" directory in the right navigation pane.
+
+    16. Select the file with "XCCDF-Results" in the filename and click the "Open" button.
+
+    17. Review all rules by selecting each in the middle pane of the "*New Checklist" tab to gain an understanding of the rule ("Rule Title"), the possible risk to the system if the rule is not followed ("Discussion" section), how to verify that the rule is implemented ("Check Text" section), and how to apply the setting(s) if absent or incorrect on the system ("Fix Text" section) for an installation of [Fedora][Fedora-Homepage].
 
         >> :warning: **CAUTION**
         >>

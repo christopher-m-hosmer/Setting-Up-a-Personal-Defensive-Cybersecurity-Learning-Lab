@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Setting Up a Personal Defensive Cybersecurity Learning Lab_Part 2.md</title>
+<title>Setting Up a Personal Defensive Cybersecurity Learning Lab_Part 3.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,7 +365,7 @@ code {
           : 'default'
     });
   </script>
-<h1 id="setting-up-a-personal-defensive-cybersecurity-learning-lab-part-2">Setting Up a Personal Defensive Cybersecurity Learning Lab: Part 2</h1>
+<h1 id="setting-up-a-personal-defensive-cybersecurity-learning-lab-part-3">Setting Up a Personal Defensive Cybersecurity Learning Lab: Part 3</h1>
 <h2 id="license">License</h2>
 <p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC BY--NC--SA 4.0-lightgrey.svg" alt="CC BY-NC-SA 4.0"></a></p>
 <p>Setting Up a Personal Defensive Cybersecurity Learning Lab © 2022 by Christopher M. Hosmer is licensed under a
@@ -413,13 +413,13 @@ code {
 <h2 id="audit-log">Audit Log</h2>
 <pre class="hljs"><code><div>Original Created by:
  Christopher M. Hosmer [2xCH]
-Original Created On: 24 Apr 2022
+Original Created On: 29 Oct 2022
 
 Last Modified by:
  Christopher M. Hosmer [2xCH]
-Last Modified On: 27 Sep 2022
+Last Modified On: 29 Oct 2022
 
-Version: 1.1.1.0
+Version: 1.0.0.0
 </div></code></pre>
 <h2 id="modification-log">Modification Log</h2>
 <table>
@@ -433,26 +433,8 @@ Version: 1.1.1.0
 </thead>
 <tbody>
 <tr>
-<td>01.01.02.00</td>
-<td>29OCT22</td>
-<td>Christopher M. Hosmer</td>
-<td>Corrected the inline links to the VMware and VirtualBox sections of the document.</td>
-</tr>
-<tr>
-<td>01.01.01.00</td>
-<td>27SEP22</td>
-<td>Christopher M. Hosmer</td>
-<td>Corrected the Ubuntu version in the &quot;General Guest Operating System (OS) Setup Steps&quot; section.</td>
-</tr>
-<tr>
-<td>01.01.00.00</td>
-<td>21MAY22</td>
-<td>Christopher M. Hosmer</td>
-<td>Removed header and footer markings.</td>
-</tr>
-<tr>
 <td>01.00.00.00</td>
-<td>24APR22</td>
+<td>29OCT22</td>
 <td>Christopher M. Hosmer</td>
 <td>-- Version 1.0.0.0.</td>
 </tr>
@@ -460,8 +442,8 @@ Version: 1.1.1.0
 </table>
 <h2 id="summary">Summary</h2>
 <p>This document helps the user setup a hypervisor on a
-single virtual machine running the <strong>Ubuntu 20.04.4 LTS (Focal Fossa)</strong>
-<a href="https://ubuntu.com/" title="Canonical Ubuntu Homepage">Ubuntu Desktop Linux distribution</a> as a guest
+single virtual machine running the <strong>Fedora 36</strong>
+<a href="https://getfedora.org/" title="Fedora Homepage">Fedora Workstation Linux distribution</a> as a guest
 operating system.  The document guides the user through installing
 and configuring several publicly available U.S. Department of Defense
 (DoD) tools on the guest OS so the user can exercise self-learning to
@@ -469,8 +451,8 @@ evaluate the guest operating system's security posture and learn how to
 securing the guest OS using U.S. DoD standards.</p>
 <h2 id="objective">Objective</h2>
 <p>This guide provides directions for creating an environment that assists
-a user in learning techniques used for securing the <strong>Ubuntu 20.04.4 LTS (Focal Fossa)</strong>
-<a href="https://ubuntu.com/" title="Canonical Ubuntu Homepage">Ubuntu Desktop Linux distribution</a> using U.S. DoD
+a user in learning techniques used for securing the <strong>Fedora 36</strong>
+<a href="https://getfedora.org/" title="Fedora Homepage">Fedora Workstation Linux distribution</a> using U.S. DoD
 tools and standards.  The guide does not cover how to use Linux, to
 apply security principles, or to evaluate security standards within a
 specific architecture.  It does help establish the environment needed
@@ -562,11 +544,12 @@ develop the Documentation File.</p>
 <p><a href="https://www.vmware.com/go/downloadplayer" title="VMware Workstation Player Download Webpage">VMware Workstation Player Download Webpage</a></p>
 <p><a href="https://www.vmware.com/support/pubs/player_pubs.html" title="VMware Workstation Player Online Manual">VMware Workstation Player Online Manual</a></p>
 <p><a href="https://kb.vmware.com/s/article/80807" title="Supported host operating systems for Workstation Pro 16.x and Workstation Player 16.x (80807)">VMware Workstation Player Host OS Compatibility Guide</a></p>
-<p><a href="https://ubuntu.com/" title="Canonical Ubuntu Homepage">Canonical Ubuntu Homepage</a></p>
-<p><a href="https://ubuntu.com/download" title="Canonical Ubuntu Download Webpage">Canonical Ubuntu Download Webpage</a></p>
-<p><a href="https://releases.ubuntu.com/20.04/" title="Canonical Ubuntu 20.04.x Download Webpage">Canonical Ubuntu 20.04.x Download Webpage</a></p>
-<p><a href="https://www.debian.org/" title="Debian Linux Homepage">Debian Linux Homepage</a></p>
-<p><a href="https://www.debian.org/download" title="Debian Linux Download Webpage">Debian Linux Download Webpage</a></p>
+<p><a href="https://getfedora.org/" title="Fedora Homepage">Fedora Homepage</a></p>
+<p><a href="https://getfedora.org/en/workstation/download/" title="Fedora Download Webpage">Fedora Download Webpage</a></p>
+<p><a href="https://download.fedoraproject.org/pub/fedora/linux/releases/36/" title="Fedora 36 Download Webpage">Fedora 36 Download Webpage</a></p>
+<p><a href="https://download.fedoraproject.org/pub/fedora/linux/releases/36/Workstation/x86_64/iso/" title="Fedora 36 Workstation x86_64 Download Webpage">Fedora 36 Workstation x86_64 Download Webpage</a></p>
+<p><a href="https://docs.fedoraproject.org/en-US/fedora/f36/" title="Fedora 36 Documentation">Fedora 36 Documentation</a></p>
+<p><a href="https://docs.fedoraproject.org/en-US/docs/" title="Fedora Documentation">Fedora Documentation</a></p>
 <p><a href="https://support.microsoft.com/en-us/windows?ui=en-US&amp;rs=en-US&amp;ad=US#WindowsVersion=Windows_10" title="Microsoft Windows 10 Support Webpage">Microsoft Windows 10 Support Webpage</a></p>
 <p><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise" title="Microsoft Windows 10 Evaluation Downloads Webpage">Microsoft Windows 10 Evaluation Download Webpage</a></p>
 <p><a href="https://www.uscyberpatriot.org/" title="CyberPatriot Homepage">CyberPatriot Homepage</a></p>
@@ -583,16 +566,16 @@ develop the Documentation File.</p>
 </blockquote>
 <ol>
 <li>
-<p><a href="https://releases.ubuntu.com/20.04/" title="Canonical Ubuntu 20.04.x Download Webpage">Download</a> the <strong>Ubuntu 20.04.x LTS Desktop Linux</strong> distribution ISO image file (~3GB).</p>
+<p><a href="https://download.fedoraproject.org/pub/fedora/linux/releases/36/Workstation/x86_64/iso/" title="Fedora 36 Workstation x86_64 Download Webpage">Download</a> the <strong>Fedora 36 Workstation</strong> distribution ISO image file (~2GB).</p>
 </li>
 <li>
-<p>Right-click the &quot;SHA256SUMS&quot; link and select the &quot;Save link as&quot; menu item.</p>
+<p>Right-click the &quot;Fedora-Workstation-36-1.5-x86_64-CHECKSUM&quot; link and select the &quot;Save link as&quot; menu item.</p>
 </li>
 <li>
-<p>In the file selection window, click the &quot;Downloads&quot; bookmark in the left pane, change the filename to <code>Ubuntu20-SHA256SUMS.txt</code>, and click the &quot;Save&quot; button.</p>
+<p>In the file selection window, click the &quot;Downloads&quot; bookmark in the left pane, change the filename to <code>Fedora-Workstation-36-1.5-x86_64-CHECKSUM.txt</code>, and click the &quot;Save&quot; button.</p>
 <blockquote>
 <p><strong>Note</strong></p>
-<p>The &quot;SHA256SUMS&quot; is a text file, so left-clicking will open it within the browser instead of downloading and saving it to the default download directory.</p>
+<p>The &quot;Fedora-Workstation-36-1.5-x86_64-CHECKSUM&quot; is a text file, so left-clicking may open it within the browser instead of downloading and saving it to the default download directory.</p>
 </blockquote>
 </li>
 <li>
@@ -607,35 +590,35 @@ cd ~\Downloads
 <li>
 <p>Verify that the directory has the two (2) downloaded files:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># -Include: Only show the names that match the patterns</span>
-<span class="hljs-built_in">Get-ChildItem</span> .\* <span class="hljs-literal">-Include</span> <span class="hljs-string">'*Ubuntu*'</span>
+<span class="hljs-built_in">Get-ChildItem</span> .\* <span class="hljs-literal">-Include</span> <span class="hljs-string">'*Fedora-Workstation*'</span>
 </div></code></pre>
 </li>
 <li>
-<p>Verify the <strong>Integrity</strong> of the &quot;Ubuntu 20.04.x LTS Desktop Linux&quot; distribution ISO image file.</p>
+<p>Verify the <strong>Integrity</strong> of the &quot;Fedora 36 Workstation&quot; distribution ISO image file.</p>
 <ol>
 <li>
-<p>Calculate the SHA-256 hash of the downloaded &quot;Ubuntu 20.04.x LTS Desktop Linux&quot; distribution ISO image file:</p>
+<p>Calculate the SHA-256 hash of the downloaded &quot;Fedora 36 Workstation&quot; distribution ISO image file:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># .Hash: Only return the hash value</span>
 <span class="hljs-comment"># .ToLower(): Convert the results to all lowercase</span>
-(<span class="hljs-built_in">Get-FileHash</span> <span class="hljs-literal">-Algorithm</span> SHA256 .\ubuntu<span class="hljs-literal">-20</span>.<span class="hljs-number">04</span>.*<span class="hljs-literal">-desktop</span><span class="hljs-literal">-amd64</span>.iso).Hash.ToLower()
+(<span class="hljs-built_in">Get-FileHash</span> <span class="hljs-literal">-Algorithm</span> SHA256 .\Fedora<span class="hljs-literal">-Workstation</span><span class="hljs-literal">-Live</span><span class="hljs-literal">-x86_64</span><span class="hljs-literal">-36</span>-*.iso).Hash.ToLower()
 </div></code></pre>
 <blockquote>
 <p><strong>Note</strong></p>
 <p>If the <code>Get-FileHash</code> cmdlet is not available try using the <code>certutil</code> program:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># The `certutil` application doesn't seem to accept glob patterns, so the full filename is required.</span>
 <span class="hljs-comment"># The following command uses an example filename.</span>
-certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-literal">-20</span>.<span class="hljs-number">04.4</span><span class="hljs-literal">-desktop</span><span class="hljs-literal">-amd64</span>.iso SHA256
+certutil <span class="hljs-literal">-hashfile</span> .\Fedora<span class="hljs-literal">-Workstation</span><span class="hljs-literal">-Live</span><span class="hljs-literal">-x86_64</span><span class="hljs-literal">-36</span><span class="hljs-literal">-1</span>.<span class="hljs-number">5</span>.iso SHA256
 </div></code></pre>
 </blockquote>
 </li>
 <li>
-<p>Display the SHA-256 hash provided in the file downloaded from the &quot;Ubuntu&quot; website:</p>
+<p>Display the SHA-256 hash provided in the file downloaded from the &quot;Fedora&quot; website:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># |: Pipe the results of `Get-Content` into `Select-String`</span>
 <span class="hljs-comment"># -Pattern: Only return the strings that match the pattern</span>
 <span class="hljs-comment"># |: Pipe the results of `Select-String` into `ForEach-Object`</span>
 <span class="hljs-comment"># .Split: Split the string using the specified character as the field delimiter</span>
 <span class="hljs-comment"># [0]: Only return the first result</span>
-<span class="hljs-built_in">Get-Content</span> .\Ubuntu20<span class="hljs-literal">-SHA256SUMS</span>.txt | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">'ubuntu-20.04.*-desktop-amd64.iso'</span> | <span class="hljs-built_in">ForEach-Object</span> { ([<span class="hljs-built_in">string</span>]<span class="hljs-variable">$_</span>).Split(<span class="hljs-string">' '</span>)[<span class="hljs-number">0</span>] }
+<span class="hljs-built_in">Get-Content</span> .\Fedora<span class="hljs-literal">-Workstation</span><span class="hljs-literal">-36</span><span class="hljs-literal">-1</span>.<span class="hljs-number">5</span><span class="hljs-literal">-x86_64</span><span class="hljs-literal">-CHECKSUM</span>.txt | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">'Fedora-Workstation-Live-x86_64-36-.*.iso'</span> | <span class="hljs-built_in">ForEach-Object</span> { ([<span class="hljs-built_in">string</span>]<span class="hljs-variable">$_</span>).Split(<span class="hljs-string">' '</span>)[<span class="hljs-number">3</span>] }
 </div></code></pre>
 </li>
 <li>
@@ -655,10 +638,10 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 <li>
 <p>In the &quot;Create Virtual Machine&quot; window, fill in the &quot;Name and operating system&quot; form with the following information and then click the &quot;Next &gt;&quot; button:</p>
 <ul>
-<li><strong>Name</strong>: WS-U20-01</li>
+<li><strong>Name</strong>: WS-F36-01</li>
 <li><strong>Machine Folder</strong>: <em>leave the default</em></li>
 <li><strong>Type</strong>: Linux</li>
-<li><strong>Version</strong>: Ubuntu (64-bit)</li>
+<li><strong>Version</strong>: Fedora (64-bit)</li>
 </ul>
 </li>
 <li>
@@ -726,16 +709,16 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 </blockquote>
 <ol>
 <li>
-<p><a href="https://releases.ubuntu.com/20.04/" title="Canonical Ubuntu 20.04.x Download Webpage">Download</a> the <strong>Ubuntu 20.04.x LTS Desktop Linux</strong> distribution ISO image file (~3GB).</p>
+<p><a href="https://download.fedoraproject.org/pub/fedora/linux/releases/36/Workstation/x86_64/iso/" title="Fedora 36 Workstation x86_64 Download Webpage">Download</a> the <strong>Fedora 36 Workstation</strong> distribution ISO image file (~2GB).</p>
 </li>
 <li>
-<p>Right-click the &quot;SHA256SUMS&quot; link and select the &quot;Save link as&quot; menu item.</p>
+<p>Right-click the &quot;Fedora-Workstation-36-1.5-x86_64-CHECKSUM&quot; link and select the &quot;Save link as&quot; menu item.</p>
 </li>
 <li>
-<p>In the file selection window, click the &quot;Downloads&quot; bookmark in the left pane, change the filename to <code>Ubuntu20-SHA256SUMS.txt</code>, and click the &quot;Save&quot; button.</p>
+<p>In the file selection window, click the &quot;Downloads&quot; bookmark in the left pane, change the filename to <code>Fedora-Workstation-36-1.5-x86_64-CHECKSUM.txt</code>, and click the &quot;Save&quot; button.</p>
 <blockquote>
 <p><strong>Note</strong></p>
-<p>The &quot;SHA256SUMS&quot; is a text file, so left-clicking will open it within the browser instead of downloading and saving it to the default download directory.</p>
+<p>The &quot;Fedora-Workstation-36-1.5-x86_64-CHECKSUM&quot; is a text file, so left-clicking may open it within the browser instead of downloading and saving it to the default download directory.</p>
 </blockquote>
 </li>
 <li>
@@ -750,35 +733,35 @@ cd ~\Downloads
 <li>
 <p>Verify that the directory has the two (2) downloaded files:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># -Include: Only show the names that match the patterns</span>
-<span class="hljs-built_in">Get-ChildItem</span> .\* <span class="hljs-literal">-Include</span> <span class="hljs-string">'*Ubuntu*'</span>
+<span class="hljs-built_in">Get-ChildItem</span> .\* <span class="hljs-literal">-Include</span> <span class="hljs-string">'*Fedora-Workstation*'</span>
 </div></code></pre>
 </li>
 <li>
-<p>Verify the <strong>Integrity</strong> of the &quot;Ubuntu 20.04.x LTS Desktop Linux&quot; distribution ISO image file.</p>
+<p>Verify the <strong>Integrity</strong> of the &quot;Fedora 36 Workstation&quot; distribution ISO image file.</p>
 <ol>
 <li>
-<p>Calculate the SHA-256 hash of the downloaded &quot;Ubuntu 20.04.x LTS Desktop Linux&quot; distribution ISO image file:</p>
+<p>Calculate the SHA-256 hash of the downloaded &quot;Fedora 36 Workstation&quot; distribution ISO image file:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># .Hash: Only return the hash value</span>
 <span class="hljs-comment"># .ToLower(): Convert the results to all lowercase</span>
-(<span class="hljs-built_in">Get-FileHash</span> <span class="hljs-literal">-Algorithm</span> SHA256 .\ubuntu<span class="hljs-literal">-20</span>.<span class="hljs-number">04</span>.*<span class="hljs-literal">-desktop</span><span class="hljs-literal">-amd64</span>.iso).Hash.ToLower()
+(<span class="hljs-built_in">Get-FileHash</span> <span class="hljs-literal">-Algorithm</span> SHA256 .\Fedora<span class="hljs-literal">-Workstation</span><span class="hljs-literal">-Live</span><span class="hljs-literal">-x86_64</span><span class="hljs-literal">-36</span>-*.iso).Hash.ToLower()
 </div></code></pre>
 <blockquote>
 <p><strong>Note</strong></p>
 <p>If the <code>Get-FileHash</code> cmdlet is not available try using the <code>certutil</code> program:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># The `certutil` application doesn't seem to accept glob patterns, so the full filename is required.</span>
 <span class="hljs-comment"># The following command uses an example filename.</span>
-certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-literal">-20</span>.<span class="hljs-number">04.4</span><span class="hljs-literal">-desktop</span><span class="hljs-literal">-amd64</span>.iso SHA256
+certutil <span class="hljs-literal">-hashfile</span> .\Fedora<span class="hljs-literal">-Workstation</span><span class="hljs-literal">-Live</span><span class="hljs-literal">-x86_64</span><span class="hljs-literal">-36</span><span class="hljs-literal">-1</span>.<span class="hljs-number">5</span>.iso SHA256
 </div></code></pre>
 </blockquote>
 </li>
 <li>
-<p>Display the SHA-256 hash provided in the file downloaded from the &quot;Ubuntu&quot; website:</p>
+<p>Display the SHA-256 hash provided in the file downloaded from the &quot;Fedora&quot; website:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># |: Pipe the results of `Get-Content` into `Select-String`</span>
 <span class="hljs-comment"># -Pattern: Only return the strings that match the pattern</span>
 <span class="hljs-comment"># |: Pipe the results of `Select-String` into `ForEach-Object`</span>
 <span class="hljs-comment"># .Split: Split the string using the specified character as the field delimiter</span>
 <span class="hljs-comment"># [0]: Only return the first result</span>
-<span class="hljs-built_in">Get-Content</span> .\Ubuntu20<span class="hljs-literal">-SHA256SUMS</span>.txt | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">'ubuntu-20.04.*-desktop-amd64.iso'</span> | <span class="hljs-built_in">ForEach-Object</span> { ([<span class="hljs-built_in">string</span>]<span class="hljs-variable">$_</span>).Split(<span class="hljs-string">' '</span>)[<span class="hljs-number">0</span>] }
+<span class="hljs-built_in">Get-Content</span> .\Fedora<span class="hljs-literal">-Workstation</span><span class="hljs-literal">-36</span><span class="hljs-literal">-1</span>.<span class="hljs-number">5</span><span class="hljs-literal">-x86_64</span><span class="hljs-literal">-CHECKSUM</span>.txt | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">'Fedora-Workstation-Live-x86_64-36-.*.iso'</span> | <span class="hljs-built_in">ForEach-Object</span> { ([<span class="hljs-built_in">string</span>]<span class="hljs-variable">$_</span>).Split(<span class="hljs-string">' '</span>)[<span class="hljs-number">3</span>] }
 </div></code></pre>
 </li>
 <li>
@@ -814,7 +797,7 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 <p>In the &quot;Guest Operating System&quot; page, verify that the &quot;Linux&quot; radio button is checked; check the radio button, if required.</p>
 </li>
 <li>
-<p>In the &quot;Guest Operating System&quot; page, verify that the &quot;Ubuntu 64-bit&quot; menu item is selected in the &quot;Version:&quot; menu; select the &quot;Ubuntu 64-bit&quot; menu item, if required.</p>
+<p>In the &quot;Guest Operating System&quot; page, verify that the &quot;Fedora 64-bit&quot; menu item is selected in the &quot;Version:&quot; menu; select the &quot;Fedora 64-bit&quot; menu item, if required.</p>
 </li>
 <li>
 <p>Click the &quot;&gt; Next&quot; button.</p>
@@ -822,7 +805,7 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 <li>
 <p>In the &quot;Virtual Machine Name&quot; page, fill in the form with the following information and then click the &quot;&gt; Next&quot; button:</p>
 <ul>
-<li><strong>Name</strong>: WS-U20-01</li>
+<li><strong>Name</strong>: WS-F36-01</li>
 <li><strong>Location</strong>: <em>leave the default</em></li>
 </ul>
 </li>
@@ -876,96 +859,157 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 <h2 id="general-guest-operating-system-os-setup-steps">General Guest Operating System (OS) Setup Steps</h2>
 <ol>
 <li>
-<p>After the virtual machine boots, it will launch the operating system installer.</p>
-<blockquote>
-<p><strong>Note</strong></p>
-<p>If the &quot;Install&quot; window does not automatically start, then double-click the &quot;Install Ubuntu 22.04.4 LTS&quot; icon on the desktop.  In the &quot;Install&quot; window on the &quot;Welcome&quot; page, select &quot;English&quot; and click the &quot;Continue&quot; button.  Continue to Step 2.</p>
-</blockquote>
+<p>After the virtual machine boots, it will present a GRUB menu.</p>
 <ol>
 <li>
-<p>Wait until a the Ubuntu Graphical User Interface (GUI) loads and displays the &quot;Install&quot; window.</p>
+<p>Using the arrow keys, select the &quot;Start Fedora-Workstation-Live 36&quot; menu item.</p>
 </li>
 <li>
-<p>In the &quot;Install&quot; window on the &quot;Welcome&quot; page, select &quot;English&quot; and click the &quot;Install Ubuntu&quot; button.</p>
+<p>Press the &quot;Return&quot; key.</p>
 </li>
 </ol>
 </li>
 <li>
-<p>In the &quot;Install&quot; window on the &quot;Keyboard layout&quot; page, select &quot;English (US) for both options and click the &quot;Continue&quot; button.</p>
+<p>After the guest host boots, it will launch the &quot;Welcome to Fedora&quot; window; click the &quot;Install to Hard Drive&quot; button.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>If the &quot;Welcome to Fedora&quot; window does not automatically start, then search for and execute the &quot;Install to Hard Drive&quot; application.</p>
+</blockquote>
 </li>
 <li>
-<p>In the &quot;Install&quot; window on the &quot;Updates and other software&quot; page, select the &quot;Normal installation&quot; radio button, check the &quot;Download updates while installing Ubuntu&quot; checkbox, check the &quot;Install third-party software for graphics and Wi-Fi hardware and additional media formats&quot; checkbox, and click the &quot;Continue&quot; button.</p>
+<p>In the &quot;FEDORA 36 INSTALLATION&quot; window on the &quot;WELCOME TO FEDORA 36&quot; page:</p>
+<ol>
+<li>
+<p>Select &quot;English&quot; in the left pane.</p>
 </li>
 <li>
-<p>In the &quot;Install&quot; window on the &quot;Installation type&quot; page, select the &quot;Erase disk and install Ubuntu&quot; radio button and click the &quot;Install Now&quot; button.</p>
+<p>Select &quot;English (United States)&quot; in the right pane.</p>
+</li>
+<li>
+<p>Click the &quot;Continue&quot; button.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>In the &quot;FEDORA 36 INSTALLATION&quot; window on the &quot;INSTALLATION SUMMARY&quot; page:</p>
+<ol>
+<li>
+<p>Click the &quot;Installation Destination&quot; button underneath the &quot;SYSTEM&quot; heading.</p>
+</li>
+<li>
+<p>On the &quot;INSTALLATION DESTINATION&quot; page click the &quot;Done&quot; button.</p>
 <blockquote>
 <p><strong>Notes</strong></p>
 <ul>
 <li>This will not erase the hard drive on which the host operating system is installed.  This will only affect the virtual hard drive that was created for the virtual machine's 'guest operating system.</li>
-<li>A secure system should use full disk encryption, which can be done during installation by clicking the &quot;Advanced features...&quot; button, selecting the &quot;Use LVM with the new Ubuntu installation&quot; radio button, and checking the &quot;Encrypt the new Ubuntu installation for security&quot; checkbox, but disk encryption should be left as a manual task so the user can further research this capability, the impacts, and how to apply the required settings after installation.</li>
+<li>A secure system should use full disk encryption, which can be done during installation by checking the &quot;Encrypt my data.&quot; checkbox, but disk encryption should be left as a manual task so the user can further research this capability, the impacts, and how to apply the required settings after installation.</li>
 </ul>
 </blockquote>
 </li>
 <li>
-<p>On the &quot;Write the changes to disk?&quot; window click the &quot;Continue&quot; button.</p>
+<p>Click the &quot;Time &amp; Date&quot; button underneath the &quot;LOCALIZATION&quot; heading.</p>
 </li>
 <li>
-<p>In the &quot;Install&quot; window on the &quot;Where are you?&quot; page, type &quot;Huntsville&quot; in the text box, then select &quot;Huntsville (Alabama, United States)&quot; in the menu, and then click the &quot;Continue&quot; button.</p>
+<p>Use the &quot;Region&quot; and &quot;City&quot; menus to set the timezone.</p>
 </li>
 <li>
-<p>In the &quot;Install&quot; window on the &quot;Who are you?&quot; page, fill out the form with the following information:</p>
-<ul>
-<li><strong>Username</strong>: <em>any descriptive name</em></li>
-<li><strong>Computer Name</strong>: WS-U20-01</li>
-<li><strong>Password</strong>: <em>a complex password or passphrase that is longer than 12 characters</em></li>
-</ul>
+<p>Click the &quot;Done&quot; button.</p>
 </li>
 <li>
-<p>Verify that the &quot;Require my password to log in&quot; radio button is selected and then click the &quot;Continue&quot; button.</p>
+<p>Click the  &quot;Begin Installation&quot; button.</p>
+</li>
+</ol>
 </li>
 <li>
-<p>Wait for the operating system to finish installing; when the &quot;Installation Complete&quot; window appears click the &quot;Restart Now&quot; button.</p>
+<p>Wait for the operating system to finish installing; when the &quot;Complete!&quot; message appears above the progress bar, click the &quot;Finish Installation&quot; button.</p>
 </li>
 <li>
-<p>When the &quot;Please remove the installation medium, then press ENTER:&quot; message appears, press the &quot;Enter&quot; button.</p>
+<p>Manually reboot the Guest OS:</p>
+<ol>
+<li>
+<p>Click the top-right corner of the &quot;top bar&quot; to activate the &quot;System&quot; menu.</p>
+</li>
+<li>
+<p>Select the &quot;Power Off/Log Out&quot; menu item.</p>
+</li>
+<li>
+<p>Select teh &quot;Restart&quot; menu item.</p>
+</li>
+<li>
+<p>On the &quot;Restart&quot; window, click the &quot;Restart&quot; button.</p>
+</li>
+</ol>
 </li>
 </ol>
 <hr>
 <h2 id="general-guest-operating-system-os-first-boot-steps">General Guest Operating System (OS) First Boot Steps</h2>
 <ol>
 <li>
-<p>On the logon window, click the user created during the installation.</p>
+<p>On first boot the system will automatically login and display the &quot;Setup&quot; window.  Click the &quot;Start Setup&quot; button at the bottom of the &quot;Setup&quot; window.</p>
 </li>
 <li>
-<p>Enter the password set for the user during the installation process.</p>
+<p>On the &quot;Privacy&quot; page:</p>
+<ol>
+<li>
+<p>Turn the &quot;Location Services&quot; rocker to the &quot;off&quot; position.</p>
 </li>
 <li>
-<p>If the &quot;Software Updater&quot; window appears, click the &quot;Install Now&quot; button and enter your user password when prompted.</p>
+<p>Turn the &quot;Automatic Problem Reporting&quot; rocker to the &quot;off&quot; position.</p>
+</li>
+<li>
+<p>Click the &quot;Next&quot; button.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>On the &quot;Third-Party Repositories&quot; page:</p>
+<ol>
+<li>
+<p>Click the &quot;Enable Third-Party Repositories&quot; button.</p>
+</li>
+<li>
+<p>Click the &quot;Next&quot; button.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>On the &quot;Online Accounts&quot; page, click the &quot;Skip&quot; button.</p>
+</li>
+<li>
+<p>On the &quot;About You&quot; page:</p>
 <blockquote>
 <p><strong>Note</strong></p>
-<p>It might take a few minutes for the &quot;Software Updater&quot; window to appear.</p>
+<p>Fedora Workstation disables the &quot;root&quot; account by default.  The initial user is a member of the &quot;wheel&quot; group with &quot;sudo&quot; privileges.</p>
 </blockquote>
+<ol>
+<li>
+<p>Fill out the form with the following information:</p>
+<ul>
+<li><strong>Full Name</strong>: <em>any descriptive name</em></li>
+<li><strong>Username</strong>: <em>any descriptive name</em></li>
+</ul>
 </li>
 <li>
-<p>In the &quot;Online Accounts&quot; window click the &quot;Skip&quot; button.</p>
+<p>Click the &quot;Next&quot; button.</p>
+</li>
+</ol>
 </li>
 <li>
-<p>In the &quot;Livepatch&quot; window click the &quot;Next&quot; button.</p>
+<p>On the &quot;Password&quot; page:</p>
+<ol>
+<li>
+<p>Fill out the form with the following information:</p>
+<ul>
+<li><strong>Password</strong>: <em>a complex password or passphrase that is longer than 12 characters</em></li>
+</ul>
 </li>
 <li>
-<p>In the &quot;Help improve Ubuntu&quot; window select the &quot;No, don't send system info&quot; radio button and click the &quot;Next&quot; button.</p>
+<p>Click the &quot;Next&quot; button.</p>
+</li>
+</ol>
 </li>
 <li>
-<p>In the &quot;Privacy&quot; window turn the &quot;Location Services&quot; rocker to &quot;off&quot; position and click the &quot;Next&quot; button.</p>
-</li>
-<li>
-<p>In the &quot;Ready to go&quot; window click the &quot;Done&quot; button.</p>
-<blockquote>
-<blockquote>
-<p><img class="emoji" alt="warning" src="data:image/png;base64,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" /> <strong>CAUTION</strong></p>
-<p>If updates are being installed, wait until the software updates complete before continuing; click on the &quot;Software Updater&quot; icon and click the &quot;Restart Now&quot; button, if prompted.  After the system reboots, log back into a desktop session.</p>
-</blockquote>
-</blockquote>
+<p>The desktop will refresh; click the &quot;No Thanks&quot; button on the &quot;Welcome to GNOME 42&quot; window when it appears.</p>
 </li>
 <li>
 <p>Click the &quot;Activities&quot; button in the upper-left corner of the &quot;top bar&quot; on the desktop and type &quot;Terminal&quot; in the search bar.</p>
@@ -974,39 +1018,16 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 <p>Click the &quot;Terminal&quot; icon.</p>
 </li>
 <li>
+<p>Type <code>sudo hostnamectl hostname WS-F36-01</code> in the terminal and enter your user password when prompted.</p>
+</li>
+<li>
+<p>Type <code>sudo dnf update -y</code> to update the system.</p>
+</li>
+<li>
 <p>If using <a href="https://www.virtualbox.org/" title="VirtualBox Homepage">VirtualBox</a> as the hypervisor:</p>
 <ol>
 <li>
-<p>Type <code>sudo apt install build-essential dkms linux-headers-$(uname -r)</code> in the terminal and enter your user password when prompted.</p>
-</li>
-<li>
-<p>Type <code>y</code> in the terminal at the &quot;Do you want to continue [Y/n]&quot; prompt.</p>
-</li>
-<li>
-<p>Type <code>exit</code> to terminate the terminal.</p>
-</li>
-<li>
-<p>In the &quot;VirtualBox Graphical User Interface&quot; virtual machine window, click the &quot;Devices&quot; menu and select the &quot;Insert Guest Additions CD image...&quot; menu item.</p>
-</li>
-<li>
-<p>In the guest operating system, in the &quot;&quot;VBox_GAs_x.y.z&quot; contains software intended to be automatically started. Would you like to run it?&quot; prompt click the &quot;Run&quot; button and enter your user password when prompted.</p>
-</li>
-<li>
-<p>After the installer finishes, click the down arrow in the upper-right corner of the &quot;top bar&quot; on the desktop, click the &quot;Power Off / Log Out&quot; menu, and select the &quot;Power Off...&quot; menu item.</p>
-</li>
-<li>
-<p>In the &quot;Power Off&quot; prompt click the &quot;Restart&quot; button.</p>
-</li>
-<li>
-<p>After the system reboots, log back into a desktop session.</p>
-</li>
-</ol>
-</li>
-<li>
-<p>If using <a href="https://www.vmware.com/products/workstation-player.html" title="VMware Workstation Player Homepage">VMware Workstation Player</a> as the hypervisor:</p>
-<ol>
-<li>
-<p>Type <code>sudo apt list --installed *vmware* open-vm*</code> in the terminal and enter your user password when prompted.</p>
+<p>Type <code>sudo dnf list installed *virtualbox*</code> in the terminal.</p>
 </li>
 <li>
 <p>Verify that the command returns the following information:</p>
@@ -1014,26 +1035,82 @@ certutil <span class="hljs-literal">-hashfile</span> .\ubuntu<span class="hljs-l
 <p><strong>Note</strong></p>
 <p>Version numbers may be different than the ones shown below.</p>
 </blockquote>
-<pre class="hljs"><code><div>Listing... Done
-open-vm-tools-desktop/focal-updates,now 2:11.3.0-2ubuntu0~ubuntu20.04.2 amd64 [installed]
-open-vm-tools/focal-updates,now 2:11.3.0-2ubuntu0~ubuntu20.04.2 amd64 [installed,automatic]
-xserver-xorg-video-vmware/focal,now 1:13.3.0-3 amd64 [installed,automatic]
+<pre class="hljs"><code><div>Installed Packages
+virtualbox-guest-additions.x86_64    6.1.38-1.fc36    @updates
 </div></code></pre>
 </li>
 <li>
-<p>If any of the packages are missing install them using the <code>sudo apt install open-vm-tools open-vm-tools-desktop xserver-xorg-video-vmware</code> command.</p>
+<p>If the package is missing install it using the <code>sudo dnf install virtualbox-guest-additions</code> command.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>If using <a href="https://www.vmware.com/products/workstation-player.html" title="VMware Workstation Player Homepage">VMware Workstation Player</a> as the hypervisor:</p>
+<ol>
+<li>
+<p>Type <code>sudo dnf list installed *vmware* open-vm*</code> in the terminal.</p>
+</li>
+<li>
+<p>Verify that the command returns the following information:</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Version numbers may be different than the ones shown below.</p>
+</blockquote>
+<pre class="hljs"><code><div>Installed Packages
+open-vm-tools.x86_64            12.1.0-1.fc36    @updates 
+open-vm-tools-desktop.x86_64    12.1.0-1.fc36    @updates 
+xorg-x11-drv-vmware.x86_64      13.2.1-16.fc35   @anaconda
+</div></code></pre>
+</li>
+<li>
+<p>If any of the packages are missing install them using the <code>sudo dnf install open-vm-tools open-vm-tools-desktop xorg-x11-drv-vmware</code> command.</p>
 </li>
 </ol>
 </li>
 <li>
 <p>Resize the virtual machine window in the host operating system and the guest operating system should resize automatically.</p>
 </li>
+<li>
+<p>Manually reboot the Guest OS:</p>
+<ol>
+<li>
+<p>Click the top-right corner of the &quot;top bar&quot; to activate the &quot;System&quot; menu.</p>
+</li>
+<li>
+<p>Select the &quot;Power Off/Log Out&quot; menu item.</p>
+</li>
+<li>
+<p>Select teh &quot;Restart&quot; menu item.</p>
+</li>
+<li>
+<p>On the &quot;Restart&quot; window, click the &quot;Restart&quot; button.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>After the Guest OS restarts, log back into the desktop:</p>
+<ol>
+<li>
+<p>On the logon window, click the user created during the post installation &quot;Setup&quot; process.</p>
+</li>
+<li>
+<p>Enter the password set for the user during the post installation &quot;Setup&quot; process.</p>
+</li>
+</ol>
+</li>
 </ol>
 <hr>
 <h2 id="general-dod-cybersecurity-software-download-steps">General DoD Cybersecurity Software Download Steps</h2>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>DoD does not publish STIG or SCAP content for the Fedora Linux distribution.  However, <a href="https://www.redhat.com/en/topics/linux/fedora-vs-red-hat-enterprise-linux">Fedora is the upstream distribution that Red Hat uses to build Red Hat Enterprise Linux (RHEL)</a>, a Linux distribution widely used within DoD and covered by DISA STIGs and SCAP content.  This section will reference the RHEL STIGs and SCAP content since versions for Fedora are not available.  Keep in mind that there are differences, some of them significant, between Fedora and RHEL, so the RHEL STIG content and SCAP results against Fedora may not be accurate, but they will be enough to help the reader gain an understanding of Fedora.  Also keep in mind that implementing the &quot;Fix Text&quot; section of a security control for RHEL may break a Fedora install.  The importance of using this information is to better understand Fedora.  Research content and understand the implication of setting changes prior to making them.</p>
+</blockquote>
 <ol>
 <li>
-<p>On the side &quot;dash&quot; bar, click the &quot;Firefox&quot; icon.</p>
+<p>Click the &quot;Activities&quot; button on the &quot;top bar&quot; to expose the &quot;dash&quot; at the bottom of the screen.</p>
+</li>
+<li>
+<p>On the &quot;dash&quot; bar, click the &quot;Firefox&quot; icon.</p>
 </li>
 <li>
 <p>Navigate to the <a href="https://public.cyber.mil/" title="DoD Cyber Exchange Homepage (Public)">DoD Cyber Exchange homepage (Public)</a> at the <code>https://public.cyber.mil</code> URL.</p>
@@ -1045,14 +1122,13 @@ xserver-xorg-video-vmware/focal,now 1:13.3.0-3 amd64 [installed,automatic]
 <p>On the left navigation bar of the &quot;Security Technical Implementation Guides (STIGs)&quot; webpage click the &quot;Automation&quot; menu and select the &quot;Security Content Automation Protocol (SCAP)&quot; menu item.</p>
 </li>
 <li>
-<p>Under the &quot;SCAP 1.2 CONTENT&quot; section, download the &quot;Canonical Ubuntu 20.04 LTS STIG Benchmark - Ver x, Rel x&quot; package and save it to the guest OS.</p>
+<p>Under the &quot;SCAP 1.2 CONTENT&quot; section, download the &quot;Red Hat Enterprise Linux 8 STIG Benchmark - Ver x, Rel x&quot; package and save it to the guest OS.</p>
 </li>
 <li>
-<p>Under the &quot;SCAP TOOLS&quot; section, download the &quot;SCC x.y Ubuntu 18 AMD64&quot; package and save it to the guest OS.</p>
-<blockquote>
-<p><strong>Note</strong></p>
-<p>Download the Ubuntu 20 package once it is available.</p>
-</blockquote>
+<p>Under the &quot;SCAP TOOLS&quot; section, download the &quot;SCC 5.6 RHEL 9/Oracle Linux 9 x86 64&quot; package and save it to the guest OS.</p>
+</li>
+<li>
+<p>Download the &quot;SCC 5.6 RPM GPG key&quot; package and save it to the guest OS.</p>
 </li>
 <li>
 <p>Right-click the &quot;SCC x.y.z Checksum file&quot; and select the &quot;Save Link As...&quot; menu item.</p>
@@ -1087,26 +1163,27 @@ xserver-xorg-video-vmware/focal,now 1:13.3.0-3 amd64 [installed,automatic]
 <p>On the right side of the &quot;Document Library&quot; page under the &quot;STIG TOPICS&quot; heading, check the &quot;Operating Systems&quot; checkbox.</p>
 </li>
 <li>
-<p>Download the &quot;Canonical Ubuntu 20.04 LTS STIG - Ver x, Rel y&quot; file.</p>
+<p>Download the &quot;Red Hat Enterprise Linux 8 STIG - Ver x, Rel x&quot; file.</p>
 </li>
 <li>
-<p>On the side &quot;dash&quot; bar, click the &quot;Files&quot; icon.</p>
+<p>On the &quot;dash&quot; bar, click the &quot;Files&quot; icon.</p>
 </li>
 <li>
 <p>In the &quot;Files&quot; application, click on the &quot;Downloads&quot; bookmark in the left navigation pane.</p>
 </li>
 <li>
-<p>Verify that there are two (2) text files and four (4) ZIP archives in the directory:</p>
+<p>Verify that there are two (2) text files and five (5) ZIP archives in the directory:</p>
 <blockquote>
 <p><strong>Note</strong></p>
 <p>Version numbers may be different than the ones shown below.</p>
 </blockquote>
-<pre class="hljs"><code><div>SCC_5.4.2_Checksums.txt
-U_STIGViewer_2-16_Hashes.txt
-scc-5.4.2_ubuntu18_amd64_bundle.zip
-U_CAN_Ubuntu_20-04_LTS_V1R2_STIG_SCAP_1-2_Benchmark.zip
-U_CAN_Ubuntu_20-04_LTS_V1R4_STIG.zip
-U_STIGViewer_2-16_Linux.zip
+<pre class="hljs"><code><div>RPM-GPG-KEY-scc-5.6.zip
+SCC_5.6_Checksums.txt
+scc-5.6_rhel9_oracle-linux9_x86_64_bundle.zip
+U_RHEL_8_V1R7_STIG_SCAP_1-2_Benchmark.zip
+U_RHEL_8_V1R8_STIG.zip
+U_STIGViewer_2-17_Hashes.txt
+U_STIGViewer_2-17_Linux.zip
 </div></code></pre>
 </li>
 <li>
@@ -1122,7 +1199,7 @@ U_STIGViewer_2-16_Linux.zip
 </div></code></pre>
 </li>
 <li>
-<p>Verify that the directory has the same six (6) files viewed in the <code>Files</code> application:</p>
+<p>Verify that the directory has the same seven (7) files viewed in the <code>Files</code> application:</p>
 <pre class="hljs"><code><div><span class="hljs-comment"># -1: Display results in a single column</span>
 <span class="hljs-comment"># -X: Sort alphabetically by entry extension</span>
 ls -1X
@@ -1136,7 +1213,7 @@ ls -1X
 <pre class="hljs"><code><div><span class="hljs-comment">#  |: Pipe the results from 'sha256sum' into 'cut'</span>
 <span class="hljs-comment"># -d: Use the specified character as the field delimiter</span>
 <span class="hljs-comment"># -f: Only display the first field</span>
-sha256sum scc-*_ubuntu18_amd64_bundle.zip | cut -d <span class="hljs-string">' '</span> -f 1
+sha256sum scc-*_rhel9_oracle-linux9_x86_64_bundle.zip | cut -d <span class="hljs-string">' '</span> -f 1
 </div></code></pre>
 </li>
 <li>
@@ -1148,8 +1225,8 @@ sha256sum scc-*_ubuntu18_amd64_bundle.zip | cut -d <span class="hljs-string">' '
 <span class="hljs-comment"># -E: Interpret PATTERNS as extended regular expressions</span>
 <span class="hljs-comment">#  |: Pipe the results from 'grep' into 'cut'</span>
 <span class="hljs-comment"># -d: Use the specified character as the field delimiter</span>
-<span class="hljs-comment"># -f: Only display the fifth field</span>
-grep -A 1 -E <span class="hljs-string">'scc-.+_ubuntu18_amd64_bundle.zip'</span> SCC_*_Checksums.txt | grep -v -E <span class="hljs-string">'scc-.+_ubuntu18_amd64_bundle.zip'</span> | cut -d <span class="hljs-string">' '</span> -f 5
+<span class="hljs-comment"># -f: Only display the third field</span>
+grep -A 1 -E <span class="hljs-string">'scc-.+_rhel9_oracle-linux9_x86_64_bundle.zip'</span> SCC_*_Checksums.txt | grep -v -E <span class="hljs-string">'scc-.+_rhel9_oracle-linux9_x86_64_bundle.zip'</span> | cut -d <span class="hljs-string">' '</span> -f 3
 </div></code></pre>
 </li>
 <li>
@@ -1209,19 +1286,25 @@ grep -A 3 -E <span class="hljs-string">'U_STIGViewer_.+_Linux.zip'</span> U_STIG
 <p>Type <code>sudo -sE</code> in the terminal and enter your user password when prompted to enter a privileged session.</p>
 </li>
 <li>
-<p>Navigate to the download folder by executing the <code>cd ~/Downloads</code> command.</p>
+<p>Navigate to the download folder by executing the <code>cd Downloads</code> command.</p>
 </li>
 <li>
 <p>Unzip the &quot;STIG Viewer&quot; application by executing the <code>unzip -d /opt/stigviewer 'U_STIGViewer_*_Linux.zip'</code> command.</p>
 </li>
 <li>
-<p>Unzip the &quot;SCAP Compliance Checker&quot; installer by executing the <code>unzip 'scc-*_ubuntu*.zip'</code> command.</p>
+<p>Unzip the &quot;SCAP Compliance Checker&quot; RPM GPG key by executing the <code>unzip 'RPM-GPG-KEY-scc-*.zip'</code> command.</p>
 </li>
 <li>
-<p>Change to the new directory by executing the <code>cd scc-*_ubuntu*_*/</code> command.</p>
+<p>Install the &quot;SCAP Compliance Checker&quot; RPM GPG key by executing the <code>rpm --import RPM-GPG-KEY-scc-*[0-9]</code> command.</p>
 </li>
 <li>
-<p>Install the &quot;SCAP Compliance Checker&quot; by executing the <code>dpkg -i scc-*.ubuntu.*_*.deb</code> command.</p>
+<p>Unzip the &quot;SCAP Compliance Checker&quot; installer by executing the <code>unzip 'scc-*_rhel9*.zip'</code> command.</p>
+</li>
+<li>
+<p>Change to the new directory by executing the <code>cd scc-*_rhel9*_*/</code> command.</p>
+</li>
+<li>
+<p>Install the &quot;SCAP Compliance Checker&quot; by executing the <code>dnf install -y scc-*.rhel9.*_*.rpm</code> command.</p>
 </li>
 <li>
 <p>Change to the installation directory by executing the <code>cd /opt</code> command.</p>
@@ -1242,19 +1325,31 @@ grep -A 3 -E <span class="hljs-string">'U_STIGViewer_.+_Linux.zip'</span> U_STIG
 <p>In the &quot;Install Content&quot; window, enable all radio buttons and click the &quot;Select Content File(s) to Install&quot; button.</p>
 </li>
 <li>
-<p>In the file selection window, click the &quot;Downloads&quot; bookmark in the &quot;Places&quot; pane.</p>
+<p>In the file selection window, click the &quot;+ Other Locations&quot; bookmark in the &quot;Places&quot; pane.</p>
 </li>
 <li>
-<p>Select the &quot;U_CAN_Ubuntu_20-04_LTS_VxRy_STIG_SCAP_1-2_Benchmark.zip&quot; file and click the &quot;Open&quot; button.</p>
+<p>Navigate to the user's &quot;Downloads&quot; directory.</p>
+</li>
+<li>
+<p>Select the &quot;U_RHEL_8_V1R7_STIG_SCAP_1-2_Benchmark.zip&quot; file and click the &quot;Open&quot; button.</p>
 </li>
 <li>
 <p>In the &quot;Install Content&quot; window, click the &quot;Install&quot; button.</p>
 </li>
 <li>
+<p>Click the &quot;Options&quot; menu and select the &quot;Show Options&quot; menu item.</p>
+</li>
+<li>
+<p>In the &quot;Scanning Options&quot; section under &quot;SCAP Processing&quot; check the &quot;Run all SCAP content regardless of applicability&quot; checkbox.</p>
+</li>
+<li>
+<p>Click the &quot;Save&quot; button.</p>
+</li>
+<li>
 <p>In the &quot;Scan&quot; section on the left of the application interface, click the &quot;Start Scan&quot; button.</p>
 </li>
 <li>
-<p>On the side &quot;dash&quot; bar, click the &quot;Files&quot; icon.</p>
+<p>On the &quot;dash&quot; bar, click the &quot;Files&quot; icon.</p>
 </li>
 <li>
 <p>In the &quot;Files&quot; application, click on the &quot;Home&quot; bookmark in the left navigation pane.</p>
@@ -1275,7 +1370,7 @@ grep -A 3 -E <span class="hljs-string">'U_STIGViewer_.+_Linux.zip'</span> U_STIG
 <p>Click the &quot;HTML&quot; link under the &quot;All Settings&quot; column to open the &quot;All Settings Report.&quot;</p>
 </li>
 <li>
-<p>Review the report to get an idea of the security posture for a default installation of <a href="https://ubuntu.com/" title="Canonical Ubuntu Homepage">Canonical Ubuntu</a>.</p>
+<p>Review the report to get an idea of the security posture for a default installation of <a href="https://getfedora.org/" title="Fedora Homepage">Fedora</a>.</p>
 <blockquote>
 <blockquote>
 <p><img class="emoji" alt="warning" src="data:image/png;base64,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" /> <strong>CAUTION</strong></p>
@@ -1292,13 +1387,16 @@ grep -A 3 -E <span class="hljs-string">'U_STIGViewer_.+_Linux.zip'</span> U_STIG
 <p>At the top of the application in the menu bar, click the &quot;File&quot; menu and select &quot;Import STIG...&quot; menu item.</p>
 </li>
 <li>
-<p>In the file selection window, click the &quot;Downloads&quot; bookmark in the &quot;Places&quot; pane.</p>
+<p>In the file selection window, click the &quot;+ Other Locations&quot; bookmark in the &quot;Places&quot; pane.</p>
 </li>
 <li>
-<p>Select the &quot;U_CAN_Ubuntu_20-04_LTS_VxRy_STIG.zip&quot; file and click the &quot;Open&quot; button.</p>
+<p>Navigate to the user's &quot;Downloads&quot; directory.</p>
 </li>
 <li>
-<p>In the &quot;STIG Explorer&quot; tab under the &quot;STIGs&quot; section, check the &quot;Canonical Ubuntu 20.04 LTS ...&quot; entry.</p>
+<p>Select the &quot;U_RHEL_8_VxRx_STIG.zip&quot; file and click the &quot;Open&quot; button.</p>
+</li>
+<li>
+<p>In the &quot;STIG Explorer&quot; tab under the &quot;STIGs&quot; section, check the &quot;Red Hat Enterprise Linux 8 ...&quot; entry.</p>
 </li>
 <li>
 <p>At the top of the application in the menu bar, click the &quot;Checklist&quot; menu and select &quot;Create Checklist - Check Marked STIG(s)&quot; menu item.</p>
@@ -1307,7 +1405,10 @@ grep -A 3 -E <span class="hljs-string">'U_STIGViewer_.+_Linux.zip'</span> U_STIG
 <p>With the &quot;*New Checklist&quot; tab active, at the top of the application in the menu bar, click the &quot;Import&quot; menu and select &quot;XCCDF Results File...&quot; menu item.</p>
 </li>
 <li>
-<p>In the file selection window, click on the &quot;Home&quot; bookmark in the left navigation pane.</p>
+<p>In the file selection window, click the &quot;+ Other Locations&quot; bookmark in the &quot;Places&quot; pane.</p>
+</li>
+<li>
+<p>Navigate to the user's &quot;Home&quot; directory.</p>
 </li>
 <li>
 <p>Double-click the &quot;SCC&quot; directory in the right navigation pane.</p>
@@ -1331,7 +1432,7 @@ grep -A 3 -E <span class="hljs-string">'U_STIGViewer_.+_Linux.zip'</span> U_STIG
 <p>Select the file with &quot;XCCDF-Results&quot; in the filename and click the &quot;Open&quot; button.</p>
 </li>
 <li>
-<p>Review all rules by selecting each in the middle pane of the &quot;*New Checklist&quot; tab to gain an understanding of the rule (&quot;Rule Title&quot;), the possible risk to the system if the rule is not followed (&quot;Discussion&quot; section), how to verify that the rule is implemented (&quot;Check Text&quot; section), and how to apply the setting(s) if absent or incorrect on the system (&quot;Fix Text&quot; section) for an installation of <a href="https://ubuntu.com/" title="Canonical Ubuntu Homepage">Canonical Ubuntu</a>.</p>
+<p>Review all rules by selecting each in the middle pane of the &quot;*New Checklist&quot; tab to gain an understanding of the rule (&quot;Rule Title&quot;), the possible risk to the system if the rule is not followed (&quot;Discussion&quot; section), how to verify that the rule is implemented (&quot;Check Text&quot; section), and how to apply the setting(s) if absent or incorrect on the system (&quot;Fix Text&quot; section) for an installation of <a href="https://getfedora.org/" title="Fedora Homepage">Fedora</a>.</p>
 <blockquote>
 <blockquote>
 <p><img class="emoji" alt="warning" src="data:image/png;base64,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" /> <strong>CAUTION</strong></p>
